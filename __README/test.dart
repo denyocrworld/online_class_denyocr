@@ -1,7 +1,7 @@
 void main() {
   String nama = "Deny";
   int umur = 21;
-  int jamPerHari = 3;
+  int jamPerHari = 1;
   int target100Jam = (100 / jamPerHari).ceil();
 
   int bulanKerja = ((target100Jam + 60) / 30).ceil();

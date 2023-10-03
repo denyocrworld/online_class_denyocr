@@ -160,28 +160,54 @@ void main() {
 ---
 
 ## IF Statement
+
+**Analogi:**
+Bayangkan Anda berada di sebuah taman bermain yang memiliki beberapa wahana. Ada wahana yang hanya boleh dimainkan oleh anak-anak dengan tinggi di bawah 150 cm, ada juga wahana yang hanya boleh dimainkan oleh orang dewasa dengan tinggi di atas 150 cm dan usia di atas 18 tahun. Anda harus memenuhi kriteria tertentu untuk bisa masuk ke setiap wahana. Dalam hal ini, kriteria tinggi dan usia adalah kondisi, dan keputusan apakah Anda boleh masuk ke wahana tersebut adalah hasil dari evaluasi kondisi tersebut.
+
 **Tugas Mentor:**
-1. Jelaskan tentang operator ==, !=, >, <, >=, <=.
-2. Jelaskan tentang operator &&, ||, !.
-3. Jelaskan tentang if, else if, dan else.
+1. Jelaskan tentang IF Statement dan bagaimana cara kerjanya.
+2. Jelaskan tentang bagaimana menulis kondisi dalam IF Statement.
+3. Jelaskan tentang ELSE, ELSE IF, serta penggunaan operator `&&` (dan) dan `||` (atau).
 
 ```dart
 void main() {
-  int score = 85;
+  int age = 20;
+  double height = 160.5;
 
-  if (score >= 90) {
-    print("Grade A");
-  } else if (score >= 80) {
-    print("Grade B");
-  } else if (score >= 70) {
-    print("Grade C");
+  // Contoh sederhana IF Statement
+  if (age >= 17) {
+    print("Anda boleh menonton film dewasa.");
+  }
+
+  // Contoh dengan ELSE
+  if (age >= 20) {
+    print("Anda sudah dewasa.");
   } else {
-    print("Grade D");
+    print("Anda masih remaja.");
+  }
+
+  // Contoh dengan ELSE IF
+  if (age >= 50) {
+    print("Anda termasuk kategori lansia.");
+  } else if (age >= 30) {
+    print("Anda termasuk kategori dewasa.");
+  } else if (age >= 18) {
+    print("Anda termasuk kategori pemuda.");
+  } else {
+    print("Anda masih anak-anak.");
+  }
+
+  // Contoh dengan operator && (dan)
+  if (height > 150 && age > 18) {
+    print("Anda boleh masuk ke wahana untuk orang dewasa.");
+  }
+
+  // Contoh dengan operator || (atau)
+  if (age < 12 || height < 150) {
+    print("Anda boleh masuk ke wahana untuk anak-anak.");
   }
 }
 ```
-
----
 
 ## List dan Map
 

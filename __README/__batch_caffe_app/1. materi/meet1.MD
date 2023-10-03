@@ -15,14 +15,10 @@
 **Analogi:** Panci, Gelas, Mangkok, Piring, Rak Buku, Toples
 
 **Hal penting di variable:**
-1. Deklarasi
-2. Mengambil nilai variable
-3. Mengubah nilai variable
-4. Mengkonversi nilai variable
-
-**Tugas Mentor:**
-1. Buat deklarasi variabel-nya error, dan tanyakan pada student kenapa itu error dan cara mengatasinya.
-2. Contohkan deklarasi variabel yang salah, dengan membuat variabel bertipe X namun diberi nilai Y. Jelaskan cara menghandle problemnya dan bagaimana melihat errornya.
+1. **Deklarasi**: Variabel digunakan untuk menyimpan data. Anda harus mendeklarasikan tipe data variabel sebelum menggunakannya.
+2. **Mengambil nilai variable**: Variabel dapat digunakan untuk menyimpan data, dan Anda dapat mengakses data tersebut dengan menggunakan nama variabel.
+3. **Mengubah nilai variable**: Nilai dalam variabel bisa diubah selama program berjalan.
+4. **Mengkonversi nilai variable**: Kadang-kadang Anda perlu mengkonversi data dari satu tipe ke tipe lain.
 
 ```dart
 void main() {
@@ -61,8 +57,9 @@ void main() {
 ## Convert Variable
 **Tugas Mentor:**
 1. Jelaskan kenapa variabel itu perlu di convert.
-2. Contoh konversi data dari String ke int.
-3. Contoh error ketika mengkonversi variabel, tanyakan pada student penyebab errornya, lalu jelaskan.
+2. Contoh konversi data dari String ke int dan sebaliknya.
+3. Jelaskan tentang metode `.tryParse()` untuk konversi yang lebih aman.
+4. Berikan contoh error ketika mengkonversi variabel, tanyakan pada student penyebab errornya, lalu jelaskan.
 
 ```dart
 void main() {
@@ -71,34 +68,26 @@ void main() {
   int quantity = int.parse(userInputQuantity);
   print("Jumlah Barang (int): $quantity");
 
-  // Contoh konversi dari String ke double (Mengambil harga barang dari input pengguna)
-  String userInputPrice = "25.50";
-  double price = double.parse(userInputPrice);
-  print("Harga Barang (double): $price");
-
   // Contoh konversi dari int ke String (Menampilkan jumlah barang dalam nota)
   int receiptQuantity = 10;
   String strReceiptQuantity = receiptQuantity.toString();
   print("Jumlah Barang dalam Nota (String): $strReceiptQuantity");
-
-  // Contoh konversi dari double ke String (Menampilkan total harga dalam nota)
-  double totalReceiptPrice = 125.75;
-  String strTotalReceiptPrice = totalReceiptPrice.toStringAsFixed(2);
-  print("Total Harga dalam Nota (String): $strTotalReceiptPrice");
 }
 ```
 
 ---
 
 ## Tipe Data Khusus
-Jika ingin menyimpan data tanggal kamu bisa menggunakan DateTime.
+Jika ingin menyimpan data tanggal, Anda bisa menggunakan tipe data DateTime.
 
 **Tugas Mentor:**
-1. Jelaskan tentang property year, month, today.
-2. Jelaskan tentang cara mengkonversi DateTime menjadi dMMMy menggunakan intl.
-3. Jelaskan operator !(not), pada variabel boolean.
+1. Jelaskan tentang property year, month, today di tipe data DateTime.
+2. Jelaskan tentang cara mengkonversi DateTime menjadi format yang berbeda menggunakan paket intl.
+3. Jelaskan operator !(not) pada variabel boolean.
 
 ```dart
+import 'package:intl/intl.dart';
+
 void main() {
   // Contoh penggunaan tipe data DateTime
   DateTime today = DateTime.now();
@@ -114,9 +103,7 @@ void main() {
   bool isRaining = true;
   bool isSunny = false;
   print("Apakah sedang hujan? $isRaining");
- 
-
- print("Apakah sedang cerah? $isSunny");
+  print("Apakah sedang cerah? $isSunny");
 }
 ```
 
@@ -175,7 +162,9 @@ void main() {
     print("Anda boleh menonton film dewasa.");
   }
 
-  // Contoh dengan ELSE
+  // Contoh
+
+ dengan ELSE
   if (age >= 20) {
     print("Anda sudah dewasa.");
   } else {

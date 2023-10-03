@@ -184,6 +184,12 @@ void main() {
 ---
 
 ## List dan Map
+
+**Analogi:**
+- **List**: Bayangkan sebuah rak buku. Setiap buku memiliki posisi tertentu di rak tersebut. Jika Anda ingin mengetahui buku apa yang berada di posisi ke-3, Anda bisa langsung melihatnya. Ini mirip dengan bagaimana kita mengakses elemen dalam list menggunakan indeks.
+  
+- **Map**: Bayangkan sebuah kamus. Di dalam kamus, Anda mencari definisi dari sebuah kata kunci. Kata kunci ini unik dan mengarahkan Anda ke definisi atau informasi tertentu. Dalam pemrograman, kata kunci ini disebut "key" dan informasi atau definisi yang terkait dengan key tersebut disebut "value".
+
 **Tugas Mentor:**
 1. Jelaskan tentang list dan map.
 2. Jelaskan tentang cara mengakses elemen dalam list dan map.
@@ -208,8 +214,6 @@ void main() {
   print(fruitPrices);  // {apple: 10000, banana: 5000, cherry: 15000, orange: 12000}
 }
 ```
-
----
 
 ## Null Safety
 **Tugas Mentor:**

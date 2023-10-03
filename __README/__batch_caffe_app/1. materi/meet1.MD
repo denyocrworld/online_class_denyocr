@@ -1,7 +1,3 @@
-Baik, saya akan membuat tutorial berdasarkan konten yang telah Anda berikan dalam format README.md.
-
----
-
 # Tutorial Bahasa Pemrograman Dart
 
 ## Daftar Isi
@@ -260,9 +256,3 @@ void main() {
   print(nullableString);  // HELLO, DART!
 }
 ```
-
----
-
-Semoga tutorial ini membantu Anda memahami dasar-dasar bahasa pemrograman Dart. Selamat belajar!
-
----

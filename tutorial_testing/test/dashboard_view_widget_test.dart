@@ -11,7 +11,6 @@ void main() {
     var dioMock = Dio();
     var dioAdapter = DioAdapter(dio: dioMock);
     dio = dioMock;
-
     dioAdapter.onGet(
       "https://reqres.in/api/users",
       (request) => request.reply(200, {'data': []}),

@@ -24,7 +24,7 @@
 void main() {
   // Deklarasi variabel untuk informasi produk
   String productName = 'Tas Ransel';
-  double productPrice = 150000;
+  double productPrice = 100.50; //$100.50
   int productStock = 50;
   bool productAvailable = true;
 
@@ -162,9 +162,7 @@ void main() {
     print("Anda boleh menonton film dewasa.");
   }
 
-  // Contoh
-
- dengan ELSE
+  // Contoh dengan ELSE
   if (age >= 20) {
     print("Anda sudah dewasa.");
   } else {

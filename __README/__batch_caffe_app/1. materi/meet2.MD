@@ -161,11 +161,42 @@ Dart mendukung tiga jenis looping yang umum digunakan:
 ## Penghentian Looping
     Penting untuk memiliki kondisi penghentian yang benar dalam loop agar tidak terjebak dalam pengulangan tak terbatas. Anda dapat menggunakan pernyataan `break` untuk keluar dari loop atau `continue` untuk melanjutkan ke iterasi berikutnya, tergantung pada kebutuhan Anda.
 
+    Mari kita bahas penggunaan `break` dan `continue` dalam bahasa Dart:
+
+    **`break` dalam Dart**:
+    - Pernyataan `break` digunakan untuk menghentikan perulangan saat kondisi tertentu terpenuhi.
+    - Saat `break` dieksekusi dalam perulangan, perulangan tersebut akan langsung berhenti, dan eksekusi program akan melanjutkan ke pernyataan di luar perulangan.
+    - `break` umumnya digunakan untuk menghentikan perulangan saat kondisi yang diinginkan telah tercapai.
+    - Contoh penggunaan `break` dalam Dart:
+
     ```dart
-    for (int i = 0; i < 10; i++) {
-    if (i == 5) {
-        break; // Keluar dari loop ketika i mencapai 5
+    void main() {
+    for (int i = 1; i <= 10; i++) {
+        if (i == 5) {
+        break;
+        }
+        print(i);
     }
-    print("Iterasi ke-$i");
     }
     ```
+
+    Output dari kode di atas adalah angka 1 hingga 4, dan perulangan berhenti ketika `i` menjadi 5.
+
+    **`continue` dalam Dart**:
+    - Pernyataan `continue` digunakan untuk melanjutkan iterasi berikutnya dalam perulangan saat suatu kondisi tertentu terpenuhi, tanpa menjalankan kode di bawah `continue` untuk iterasi saat ini.
+    - Ketika `continue` dieksekusi dalam perulangan, eksekusi akan melanjutkan ke iterasi berikutnya dalam perulangan.
+    - `continue` berguna ketika Anda ingin melanjutkan ke iterasi berikutnya tanpa mengeksekusi beberapa bagian dari kode dalam iterasi saat ini.
+    - Contoh penggunaan `continue` dalam Dart:
+
+    ```dart
+    void main() {
+    for (int i = 1; i <= 5; i++) {
+        if (i == 3) {
+        continue;
+        }
+        print(i);
+    }
+    }
+    ```
+
+    Output dari kode di atas adalah angka 1, 2, 4, dan 5 (mengabaikan angka 3). Saat `i` adalah 3, pernyataan `continue` membuat program melanjutkan ke iterasi berikutnya tanpa menjalankan `print(i)` untuk `i` yang sama.

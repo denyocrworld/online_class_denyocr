@@ -113,7 +113,7 @@ Dart mendukung tiga jenis looping yang umum digunakan:
 
     ```dart
     for (var item in items) {
-    // kode yang akan diulang untuk setiap item dalam items
+        // kode yang akan diulang untuk setiap item dalam items
     }
     ```
 
@@ -123,7 +123,7 @@ Dart mendukung tiga jenis looping yang umum digunakan:
     List<String> fruits = ['apel', 'pisang', 'ceri', 'durian'];
 
     for (var fruit in fruits) {
-    print("Saya suka $fruit");
+        print("Saya suka $fruit");
     }
     ```
 
@@ -142,8 +142,8 @@ Dart mendukung tiga jenis looping yang umum digunakan:
     Map<String, int> scores = {'John': 90, 'Jane': 85, 'Bob': 88};
 
     for (var name in scores.keys) {
-    var score = scores[name];
-    print("$name memiliki nilai $score");
+        var score = scores[name];
+        print("$name memiliki nilai $score");
     }
     ```
 
@@ -172,11 +172,11 @@ Dart mendukung tiga jenis looping yang umum digunakan:
     ```dart
     void main() {
     for (int i = 1; i <= 10; i++) {
-        if (i == 5) {
-        break;
+            if (i == 5) {
+                break;
+            }
+            print(i);
         }
-        print(i);
-    }
     }
     ```
 
@@ -191,11 +191,11 @@ Dart mendukung tiga jenis looping yang umum digunakan:
     ```dart
     void main() {
     for (int i = 1; i <= 5; i++) {
-        if (i == 3) {
-        continue;
+            if (i == 3) {
+            continue;
+            }
+            print(i);
         }
-        print(i);
-    }
     }
     ```
 

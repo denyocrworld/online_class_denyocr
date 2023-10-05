@@ -2,6 +2,38 @@
 
 Looping adalah salah satu konsep dasar dalam pemrograman yang memungkinkan Anda untuk menjalankan sejumlah perintah berulang kali. Dart, bahasa pemrograman yang digunakan dalam pengembangan aplikasi Flutter, mendukung beberapa jenis looping yang memungkinkan Anda mengulangi kode sesuai dengan kondisi atau iterasi tertentu.
 
+
+## Kenapa harus menerapkan Looping?
+
+Dengan looping kita bisa membuat penulisan kode yang berulang menjadi effisien. Yang tadinya perlu menulis 100 baris, kita cukup menulis beberapa baris saja.
+
+Tanpa looping, 
+Kode-nya akan sangat panjang.
+```
+void main() {
+  print(1);
+  print(2);
+  print(3);
+  print(4);
+  print(5);
+  print(6);
+  print(7);
+  print(8);
+  print(9);
+  print(10);
+  // --- print(11) - print(99)
+  print(100);
+}
+```
+
+Dengan looping:
+Cukup dengan beberapa baris kode saja.
+```
+for(var i=1;i<=100;i++){
+    print(i);
+}
+```
+
 ## Jenis Looping di Dart
 
 Dart mendukung tiga jenis looping yang umum digunakan:

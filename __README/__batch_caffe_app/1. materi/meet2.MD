@@ -171,7 +171,7 @@ Mari kita bahas penggunaan `break` dan `continue` dalam bahasa Dart:
 
 ```dart
 void main() {
-for (int i = 1; i <= 10; i++) {
+    for (int i = 1; i <= 10; i++) {
         if (i == 5) {
             break;
         }
@@ -190,7 +190,7 @@ Output dari kode di atas adalah angka 1 hingga 4, dan perulangan berhenti ketika
 
 ```dart
 void main() {
-for (int i = 1; i <= 5; i++) {
+    for (int i = 1; i <= 5; i++) {
         if (i == 3) {
         continue;
         }

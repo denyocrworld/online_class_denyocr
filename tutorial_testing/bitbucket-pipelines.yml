@@ -1,0 +1,12 @@
+image: cirrusci/flutter:latest
+
+pipelines:
+  branches:
+    '{master,development}':
+      - step:
+          name: APK Assembling
+          caches:
+            - gradle
+          script:
+            - flutter pub get
+            - flutter test

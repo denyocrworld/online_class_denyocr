@@ -22,6 +22,7 @@ class DashboardController extends State<DashboardView> {
 
   List users = [];
   getUsers() async {
+    //membuat request http
     users = await UserService().getUsers();
     setState(() {});
   }

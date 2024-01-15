@@ -7,6 +7,8 @@ import 'package:tutorial_testing/shared/util/dio/dio.dart';
 import 'package:tutorial_testing/state_util.dart';
 
 void main() {
+  // mocking
+
   setUp(() {
     var dioMock = Dio();
     var dioAdapter = DioAdapter(dio: dioMock);
@@ -16,9 +18,9 @@ void main() {
       (request) => request.reply(200, {'data': []}),
     );
   });
+
   testWidgets('Widget Test for DashboardView', (WidgetTester tester) async {
     //-------------------------
-
     await tester.pumpWidget(
       MaterialApp(
         navigatorKey: Get.navigatorKey,

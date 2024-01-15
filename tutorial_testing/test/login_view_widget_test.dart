@@ -8,7 +8,8 @@ void main() {
     //---
   });
 
-  testWidgets('Widget Test for LoginView', (WidgetTester tester) async {
+  testWidgets('WT-001-AUTH Widget Test for LoginView',
+      (WidgetTester tester) async {
     // Build our LoginView widget.
     await tester.pumpWidget(
       MaterialApp(
@@ -22,15 +23,16 @@ void main() {
     expect(find.text('Email'), findsOneWidget);
     expect(find.text('Password'), findsOneWidget);
 
-    // Simulate user input in the email and password fields
+    // // Simulate user input in the email and password fields
     await tester.enterText(find.byKey(const Key('email')), 'user@demo.com');
     await tester.enterText(find.byKey(const Key('password')), '123456');
 
-    // // Verify if the user input is correctly entered
+    // // // Verify if the user input is correctly entered
     expect(find.text('user@demo.com'), findsOneWidget);
     expect(find.text('123456'), findsOneWidget);
 
-    // // Simulate a tap on the login button
+    // // // Simulate a tap on the login button
     expect(find.byKey(const Key('login_btn')), findsOneWidget);
+    await tester.tap(find.byKey(const Key('login_btn')));
   });
 }
